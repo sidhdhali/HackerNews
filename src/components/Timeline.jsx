@@ -15,7 +15,7 @@ function Timeline() {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `http://hn.algolia.com/api/v1/search?query=${searchTerm}&hitsPerPage=10&page=${page}`
+          `https://hn.algolia.com/api/v1/search?query=${searchTerm}&hitsPerPage=10&page=${page}`
         );
         // console.log(response);
         setArticles(response.data.hits);
